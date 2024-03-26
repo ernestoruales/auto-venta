@@ -105,6 +105,8 @@ export interface Vehiculo{
   foto?:string | null;
   anio?: number;
   calificacion?:number;
+  usuario?:string|null;
+  usuario_mod?:string|null;
 }
 
 export interface Respuesta{

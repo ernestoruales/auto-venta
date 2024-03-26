@@ -19,7 +19,7 @@
       <table class="table table-dark table-striped table-hover">
         <thead>
           <tr>
-            <td colspan="6">
+            <td colspan="8">
 
             </td>
             <td>
@@ -46,6 +46,8 @@
             <th scope="col">MODELO</th>
             <th scope="col">AÑO</th>
             <th scope="col">CALIFICACIÓN</th>
+			<th scope="col">USU CREACION</th>
+			<th scope="col">USU MOD</th>
             <th scope="col">OP</th>
           </tr>
         </thead>
@@ -59,6 +61,8 @@
             <td>
               <app-calificacion [calificacion]="item.calificacion" (select)="mostraAlerta($event)"></app-calificacion>
             </td>
+			<td> {{item.usuario}}</td>
+			<td> {{item.usuario_mod}}</td>
             <td> 
               <div class="btn-group" role="group" aria-label="Basic example">
                 <a class="btn btn-info text-white" [routerLink]="['/vehiculo/' + item.codigo]"> Editar</a>
